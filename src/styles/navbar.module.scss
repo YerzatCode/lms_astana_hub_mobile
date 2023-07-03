@@ -1,0 +1,153 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    justify-content: space-between;
+
+    div {
+        display: flex;
+        align-items: center;
+        margin-inline: 12px;
+    }
+
+    .left {
+        img {
+            width: 206px;
+            
+        }
+    }
+
+    .right {
+        svg {
+            transform: scale(1);
+        }
+    }
+
+    .search {
+        margin-left: 36px;
+        width: 202px;
+        height: 48px;
+        background-color: rgba(243, 243, 243, 1);
+        padding-left: 8px;
+
+        input {
+            background: none;
+            border: none;
+            font-size: 18px;
+            width: 168px;
+            margin-left: 6px;
+
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+
+    &_button {
+        font-size: 16px;
+        padding: 8px 12px;
+        background: none;
+        display: flex;
+        align-items: center;
+        color: rgba(80, 209, 119, 1);
+        border: 1px solid;
+        border-radius: 30px;
+        margin-left: 12px;
+        stroke: rgba(80, 209, 119, 1);
+        transition: .2s ease;
+
+        svg {
+            margin-left: 6px;
+        }
+
+        &:hover {
+            background: rgba(80, 209, 119, 1);
+            color: #fff;
+            stroke: #fff;
+        }
+    }
+
+    .menu_button {
+        display: none;
+    }
+
+    @media (max-width:1540px) {
+        padding: 8px;
+
+
+        .left {
+            img {
+                width: 200px;
+            }
+        }
+
+        .search {
+            height: 38px;
+            width: 180px;
+
+            input {
+                width: 140px;
+                font-size: 16px;
+            }
+
+            svg {
+                transform: scale(.9);
+            }
+        }
+
+        &_button {
+            font-size: 14px;
+            padding: 4px 8px;
+        }
+
+        .right {
+            img {
+                width: 48px;
+                height: 48px;
+            }
+
+            svg {
+                transform: scale(.9);
+            }
+        }
+    }
+
+    @media (max-width:1024px) {
+        .search {
+            display: none;
+        }
+
+          
+    }
+    @media (max-width:768px) {
+        padding: 8px;
+        span{
+            display: none;
+        }
+        div{
+            margin-inline: 8px;
+        }
+        &_button{
+            font-size: 14px;
+            padding: 4px 8px;
+            svg{
+                margin: 0;
+            }
+        }
+
+          
+    }
+    @media (max-width:520px) {
+        .search {
+            display: none;
+        }
+
+        .right {
+            display: none;
+        }
+        .menu_button{
+            display: inline;
+        }
+    }
+
+}
