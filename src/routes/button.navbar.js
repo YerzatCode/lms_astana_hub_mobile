@@ -1,19 +1,19 @@
-import { Book, Edit, Tool } from '../assets/navbar'
+import { IcBook, IcEdit, IcTool } from '@/assets/js/'
 
 export const button = [
 	{
 		name: 'Куратор',
 		href: '/cur',
-		icon: <Edit />,
+		icon: <IcEdit />,
 	},
 	{
 		name: 'Учительская',
 		href: '/cur',
-		icon: <Book />,
+		icon: <IcBook />,
 	},
 	{
 		name: 'Админ',
 		href: '/cur',
-		icon: <Tool />,
+		icon: <IcTool />,
 	},
 ]

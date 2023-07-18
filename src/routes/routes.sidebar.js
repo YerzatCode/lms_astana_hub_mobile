@@ -1,29 +1,29 @@
-import { Calendar, Chat, Courses, Home, Shield } from '../assets/sidebar/'
+import { IcCalendar, IcChat, IcCourses, IcHome, IcSheild } from '@/assets/js'
 
 export const routes = [
 	{
 		name: 'Мое обучение',
 		href: '/',
-		icon: <Home />,
+		icon: <IcHome />,
 	},
 	{
 		name: 'Курсы',
 		href: '/courses',
-		icon: <Courses />,
+		icon: <IcCourses />,
 	},
 	{
 		name: 'Календарь',
-		href: '/schedule',
-		icon: <Calendar />,
+		href: '/calendar',
+		icon: <IcCalendar />,
 	},
 	{
 		name: 'Сообщения',
 		href: '/message',
-		icon: <Chat />,
+		icon: <IcChat />,
 	},
 	{
 		name: 'Поддержка',
 		href: '/support',
-		icon: <Shield />,
+		icon: <IcSheild />,
 	},
 ]

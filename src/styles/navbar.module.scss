@@ -11,14 +11,19 @@
     }
 
     .left {
-        img {
-            width: 206px;
-            
+        stroke: black;
+        img{
+            filter: drop-shadow(3px 1px 8px  rgb(122, 121, 121));
         }
     }
 
     .right {
+        img{
+            width: 64px;
+            height: 64px;
+        }
         svg {
+            stroke: black;
             transform: scale(1);
         }
     }
@@ -43,29 +48,8 @@
         }
     }
 
-    &_button {
-        font-size: 16px;
-        padding: 8px 12px;
-        background: none;
-        display: flex;
-        align-items: center;
-        color: rgba(80, 209, 119, 1);
-        border: 1px solid;
-        border-radius: 30px;
-        margin-left: 12px;
-        stroke: rgba(80, 209, 119, 1);
-        transition: .2s ease;
 
-        svg {
-            margin-left: 6px;
-        }
 
-        &:hover {
-            background: rgba(80, 209, 119, 1);
-            color: #fff;
-            stroke: #fff;
-        }
-    }
 
     .menu_button {
         display: none;
@@ -77,7 +61,7 @@
 
         .left {
             img {
-                width: 200px;
+                width: 185px;
             }
         }
 
@@ -95,10 +79,7 @@
             }
         }
 
-        &_button {
-            font-size: 14px;
-            padding: 4px 8px;
-        }
+
 
         .right {
             img {
@@ -117,26 +98,24 @@
             display: none;
         }
 
-          
+
     }
+
     @media (max-width:768px) {
         padding: 8px;
-        span{
+
+        span {
             display: none;
         }
-        div{
+
+        div {
             margin-inline: 8px;
         }
-        &_button{
-            font-size: 14px;
-            padding: 4px 8px;
-            svg{
-                margin: 0;
-            }
-        }
 
-          
+
+
     }
+
     @media (max-width:520px) {
         .search {
             display: none;
@@ -145,7 +124,7 @@
         .right {
             display: none;
         }
-        
+
     }
 
 }

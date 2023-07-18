@@ -1,0 +1,214 @@
+.courses {
+	display: flex;
+	flex-wrap: wrap;
+
+	height: 100%;
+	width: 100%;
+	gap: 16px;
+}
+.course {
+	max-width: 496px;
+	max-height: 482px;
+
+	width: 100%;
+	height: 100%;
+
+	background: rgba(247, 248, 250, 1);
+
+	padding: 16px 18px;
+
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+
+	.description {
+		margin-top: 12px;
+		height: 50px;
+		width: 100%;
+	}
+	img {
+		width: 100%;
+		height: 230px;
+
+		background: rgba(224, 228, 246, 1);
+	}
+	ul {
+		display: flex;
+		column-gap: 24px;
+
+		li {
+			display: flex;
+			align-items: center;
+			gap: 6px;
+
+			svg {
+				stroke: black;
+			}
+		}
+	}
+}
+
+.all {
+	height: 100%;
+	width: 100%;
+	h4 {
+		margin-bottom: 24px;
+	}
+}
+
+.lessons {
+	&_description {
+		max-width: 692px;
+	}
+	&_program {
+		h4 {
+			margin-bottom: 24px;
+		}
+		ul {
+			display: grid;
+			gap: 24px;
+
+			li {
+				display: flex;
+				justify-content: space-between;
+
+				button {
+					font-size: 16px;
+					height: 38px;
+				}
+			}
+		}
+	}
+	&_img {
+		h6 {
+			margin-block: 16px;
+		}
+		img {
+			width: 100%;
+			height: 260px;
+			background: rgba(246, 223, 177, 1);
+		}
+	}
+}
+.lesson {
+	display: grid;
+	gap: 16px;
+	img {
+		width: 100%;
+		height: 574px;
+		background: rgba(230, 230, 230, 1);
+	}
+	&_schedule {
+		width: 100%;
+		background: rgba(247, 248, 250, 1);
+		border-bottom: 1px solid rgba(230, 230, 230, 1);
+		padding: 16px;
+		display: grid;
+		gap: 24px;
+		.list {
+			display: flex;
+			gap: 10px;
+		}
+	}
+	&_add {
+		width: 100%;
+		background: rgba(247, 248, 250, 1);
+		border-bottom: 1px solid rgba(230, 230, 230, 1);
+		padding: 16px;
+		display: grid;
+		gap: 24px;
+		.button {
+			display: flex;
+			gap: 12px;
+			button {
+				height: 38px;
+				font-size: 16px;
+				svg {
+					transform: scale(0.8);
+				}
+			}
+		}
+	}
+	&_title {
+		width: 100%;
+		padding: 16px 20px;
+
+		background: rgba(255, 255, 255, 1);
+		border-bottom: 1px solid rgba(230, 230, 230, 1);
+	}
+	&_tasks {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 100%;
+		padding: 16px 20px;
+
+		background: rgba(247, 248, 250, 1);
+		border-bottom: 1px solid rgba(230, 230, 230, 1);
+
+		ul {
+			display: flex;
+		}
+		div {
+			display: grid;
+			gap: 8px;
+		}
+	}
+}
+.task {
+	p {
+		color: rgba(160, 160, 160, 1);
+	}
+	textarea {
+		margin-top: 12px;
+		padding: 12px;
+		font-size: 18px;
+		color: rgba(24, 24, 24, 1);
+		border: 0;
+		background: rgba(243, 243, 243, 1);
+		border-bottom: 1px solid rgba(230, 230, 230, 1);
+		width: 524px;
+		height: 124px;
+
+		&:focus {
+			outline: none;
+		}
+	}
+	button {
+		font-size: 16px;
+		height: 38px;
+	}
+	&_box {
+		margin-top: 42px;
+		background: rgba(247, 248, 250, 1);
+		padding: 24px;
+	}
+	&_title {
+		display: flex;
+		justify-content: space-between;
+
+		border-bottom: 1px solid rgba(230, 230, 230, 1);
+		padding-bottom: 20px;
+		button {
+			font-size: 20px;
+			height: 51px;
+		}
+	}
+	&_fileUpload {
+		display: flex;
+		align-items: center;
+		gap: 12px;
+
+		button {
+			gap: 8px;
+			svg {
+				transform: scale(0.85);
+			}
+		}
+	}
+	&_upload {
+		margin-top: 30px;
+		display: grid;
+		gap: 8px;
+	}
+}
