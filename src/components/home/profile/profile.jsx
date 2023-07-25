@@ -7,7 +7,7 @@ export default function ProfileCard() {
 	const score = [4.1, 4.1, 4.2, 4.5, 3.3, 3.6]
 	return (
 		<div className={styles.profile}>
-			<Image src={Ava} />
+			<Image src={Ava} width={64} height={64} />
 			<div>
 				<h6>Никита</h6>
 				<button className='btn_border'>

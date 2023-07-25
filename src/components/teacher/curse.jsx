@@ -75,7 +75,7 @@ export default function TeacherCurse() {
 				<TeacherSearchUser />
 			</div>
 			<div className='add_panel'>
-				<Image src={''} alt='' />{' '}
+				<Image className={styles.curse_image} src={''} alt='' />{' '}
 			</div>
 		</div>
 	)

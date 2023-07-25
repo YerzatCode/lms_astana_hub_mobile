@@ -20,9 +20,7 @@ export default function SupportSendBox() {
 						<text>Тема обращение</text>
 						<br />
 						<select>
-							<option>Subject</option>
-							<option>Subject</option>
-							<option>Subject</option>
+							<option>Смена обучения</option>
 						</select>
 					</div>
 					<div className={styles.support_description}>

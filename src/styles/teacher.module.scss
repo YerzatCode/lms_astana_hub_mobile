@@ -13,6 +13,11 @@
 	}
 }
 .curse {
+	&_image {
+		max-width: 514px;
+		background: #f6dfb1;
+		max-height: 300px;
+	}
 	&_group {
 		&_head {
 			margin-left: 60px;

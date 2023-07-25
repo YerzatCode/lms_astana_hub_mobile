@@ -17,13 +17,13 @@ export default function CreateLeftContent() {
 			<div className={styles.create_time}>
 				<text>Длительность курса</text>{' '}
 				<select>
-					<option>Y</option>
+					<option>1 месяц</option>
 				</select>
 			</div>
 			<div className={styles.create_prof}>
 				<text>Направление обучения</text>{' '}
 				<select>
-					<option>Y</option>
+					<option>Разработка</option>
 				</select>
 			</div>
 			<button className='btn'>

@@ -1,10 +1,10 @@
-import { IcClock, IcEdit, IcFile, IcVideo } from '@/assets/js'
+import { IcClock, IcEdit, IcFile, IcLink, IcVideo } from '@/assets/js'
 import styles from '@/styles/course.module.scss'
 import Image from 'next/image'
 import { useRouter } from 'next/router'
 
 export default function CourseAdminModule() {
-	const { push } = useRouter()
+	const { push, pathname } = useRouter()
 	return (
 		<div className={styles.course}>
 			<Image src={''} alt='' />
@@ -26,13 +26,23 @@ export default function CourseAdminModule() {
 			<text className={styles.description}>
 				Описание курса Описание курса Описание курса Описание курса
 			</text>
-			<button
-				className='btn'
-				onClick={() => {
-					push('/courses/edit/:id')
-				}}>
-				Редактировать <IcEdit />
-			</button>
+			{pathname == '/curator' ? (
+				<button
+					className='btn'
+					onClick={() => {
+						push('/teacher')
+					}}>
+					Посмотреть <IcLink />
+				</button>
+			) : (
+				<button
+					className='btn'
+					onClick={() => {
+						push('/courses/edit/:id')
+					}}>
+					Редактировать <IcEdit />
+				</button>
+			)}
 		</div>
 	)
 }

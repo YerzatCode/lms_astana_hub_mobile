@@ -5,9 +5,11 @@ import BackButton from '@/components/task/back'
 import UserTasks from '@/components/task/userTask'
 import styles from '@/styles/user.module.scss'
 import Image from 'next/image'
+import { useRouter } from 'next/router'
 import { CircularProgressbar } from 'react-circular-progressbar'
 
 export default function Profile() {
+	const { push } = useRouter()
 	const pro = 100
 	return (
 		<Layout title={'Никита | Профиль'}>
@@ -21,7 +23,9 @@ export default function Profile() {
 							<Image src={Ava} alt='' width={54} height={54} />
 							<h4>Никита</h4>
 						</div>{' '}
-						<button className='btn_border_active'>
+						<button
+							className='btn_border_active'
+							onClick={() => push('/message')}>
 							Открыть чат
 							<IcChat />
 						</button>
