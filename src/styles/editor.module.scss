@@ -1,0 +1,123 @@
+.create {
+	background: #f7f8fa;
+	padding: 24px;
+	p {
+		color: #a0a0a0;
+		margin-block: 6px;
+	}
+	&_head {
+		margin-bottom: 25px;
+		div {
+			display: flex;
+			gap: 12px;
+		}
+	}
+
+	&_head,
+	&_lesson_module {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+		div {
+			display: flex;
+		}
+	}
+	&_time,
+	&_prof {
+		display: grid;
+	}
+	&_content {
+		border-block: 1px solid #e6e6e6;
+		padding-block: 24px;
+
+		display: flex;
+		gap: 68px;
+		width: 100%;
+		max-height: 620px;
+		height: 100%;
+	}
+	&_left {
+		display: grid;
+		gap: 16px;
+		max-width: 516px;
+		width: 100%;
+	}
+	&_file {
+		max-height: 270px;
+		width: 460px;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		background: #f3f3f3;
+		gap: 8px;
+	}
+	&_icon {
+		svg {
+			stroke: black;
+			transform: scale(1.5);
+		}
+	}
+	&_lesson {
+		margin-top: 32px;
+		display: grid;
+		gap: 16px;
+
+		&_module {
+			background: #ffffff;
+			padding: 12px;
+			div {
+				display: grid;
+			}
+		}
+	}
+}
+.lesson_create {
+	background: #f7f8fa;
+	padding: 24px;
+	p {
+		margin-block: 8px;
+		color: #a0a0a0;
+	}
+
+	&_head,
+	&_content {
+		display: flex;
+		gap: 16px;
+	}
+	&_head {
+		align-items: center;
+		justify-content: space-between;
+		border-bottom: #e6e6e6;
+		padding-bottom: 30px;
+	}
+
+	&_content {
+		&_right {
+			max-width: 516px;
+			width: 100%;
+			gap: 16px;
+			display: grid;
+		}
+	}
+	&_video_upload {
+		max-height: 270px;
+		width: 460px;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		background: #f3f3f3;
+		gap: 8px;
+	}
+	&_add {
+		button {
+			margin-top: 8px;
+		}
+	}
+}

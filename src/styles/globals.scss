@@ -22,6 +22,7 @@ body {
 .layout_container {
 	display: flex;
 	height: 100%;
+	width: 100%;
 }
 .container {
 	max-width: 1520px;
@@ -31,6 +32,14 @@ body {
 	display: flex;
 	flex-direction: column;
 	gap: 48px;
+
+	@media (max-width: 525px) {
+		display: grid;
+		// width: 100%;
+		// height: 100%;
+		height: 200px;
+		width: 200px;
+	}
 }
 
 .content {
@@ -60,6 +69,30 @@ body {
 		display: flex;
 		flex-direction: column;
 		row-gap: 16px;
+		img {
+			background: #a0a0a0;
+			max-width: 514px;
+			max-height: 300px;
+			width: 100%;
+			height: 300px;
+
+			// background-size: cover;
+			background-position: center;
+			background-repeat: no-repeat;
+		}
+		@media (max-width: 1024px) {
+			img {
+				display: none;
+			}
+		}
+	}
+	.standart {
+		max-width: 1008px;
+		width: 100%;
+		display: grid;
+		h4 {
+			margin-bottom: 20px;
+		}
 	}
 
 	@media (max-width: 1540px) {
@@ -67,6 +100,7 @@ body {
 
 		.basic {
 			max-width: 832px;
+			width: 100%;
 		}
 
 		.add_panel {
@@ -84,7 +118,7 @@ body {
 		}
 	}
 
-	@media (max-width: 426px) {
+	@media (max-width: 425px) {
 		flex-direction: column;
 
 		.basic {
@@ -171,14 +205,36 @@ p {
 	font-size: 20px;
 	color: #fff;
 	font-weight: 500;
+	gap: 6px;
+	transition: 0.2s ease;
 
 	path {
+		transition: 0.2s ease;
 		stroke: #fff;
+	}
+	&:hover {
+		background: #46a462;
+		color: #ededed;
+		path {
+			stroke: #ededed;
+		}
+	}
+}
+textarea {
+	background: #f3f3f3;
+	border: none;
+	outline: none;
+	font-size: 18px;
+	padding: 12px;
+	max-width: 514px;
+	width: 100%;
+	height: 124px;
+	&:focus {
+		color: black;
 	}
 }
 
 .btn_border {
-	margin-left: 10px;
 	background: none;
 	border: 1px solid rgba(80, 209, 119, 1);
 	border-radius: 30px;
@@ -190,13 +246,38 @@ p {
 	align-items: center;
 	gap: 6px;
 	padding: 4px 8px;
+	transition: 0.2s ease;
 	svg {
 		path {
 			transform: scale(0.9);
 			stroke: rgba(80, 209, 119, 1);
+			transition: 0.2s ease;
 		}
 	}
 
+	&_active,
+	&:hover {
+		background: #50d177;
+		color: #fff;
+
+		border: none;
+		display: flex;
+		align-items: center;
+		padding: 4px 8px;
+		border-radius: 30px;
+		gap: 6px;
+		font-size: 16px;
+		// margin-left: 10px;
+		transition: 0.2s ease;
+		svg {
+			path {
+				stroke: #fff;
+			}
+		}
+		&:hover {
+			background: #50c172;
+		}
+	}
 	@media (max-width: 1540px) {
 		font-size: 14px;
 		padding: 2px 8px;
@@ -233,7 +314,29 @@ p {
 		font-weight: 400;
 	}
 }
-
+input {
+	max-width: 514px;
+	width: 100%;
+	padding: 8px;
+	font-size: 18px;
+	color: #a0a0a0;
+	border: none;
+	outline: none;
+	background: #e6e6e6;
+	&:focus {
+		color: black;
+		opacity: 100%;
+	}
+}
+select {
+	width: 100%;
+	max-width: 514px;
+	background: #e6e6e6;
+	border: none;
+	outline: none;
+	padding: 12px;
+	font-size: 18px;
+}
 @media (max-width: 1280px) {
 	h2 {
 		font-size: 36px;
@@ -325,4 +428,9 @@ p {
 		font-size: 8px;
 		font-weight: 400;
 	}
+}
+
+.active {
+	border: #50d177 2px solid;
+	border-radius: 30px;
 }

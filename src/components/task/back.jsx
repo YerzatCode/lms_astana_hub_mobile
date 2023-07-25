@@ -6,7 +6,7 @@ export default function BackButton() {
 
 	return (
 		<>
-			<button className='btn' onClick={() => back()}>
+			<button className='btn_border_active' onClick={() => back()}>
 				<LeftArrow />
 				Назад
 			</button>

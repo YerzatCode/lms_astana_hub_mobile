@@ -11,7 +11,6 @@ function CalendarGrid({ startDay, today }) {
 	const currentDay = (d) => now.isSame(d, 'day')
 	const monthSelect = (d) => today.isSame(d, 'month')
 
-	console.log(monthSelect())
 	return (
 		<div className={styles.calendar}>
 			{[...Array(7)].map((_, index) => (

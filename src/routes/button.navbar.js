@@ -8,12 +8,12 @@ export const button = [
 	},
 	{
 		name: 'Учительская',
-		href: '/cur',
+		href: '/teacher',
 		icon: <IcBook />,
 	},
 	{
 		name: 'Админ',
-		href: '/cur',
+		href: '/admin',
 		icon: <IcTool />,
 	},
 ]

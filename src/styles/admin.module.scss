@@ -1,0 +1,71 @@
+.edu {
+	background: #f7f8fa;
+	padding: 16px;
+	gap: 16px;
+	display: grid;
+	&_list {
+		display: flex;
+
+		gap: 4px;
+
+		&_user {
+			background: #50d177;
+			height: 8px;
+			width: 24px;
+			border-radius: 8px;
+		}
+	}
+}
+.archive {
+	background: #f7f8fa;
+	display: grid;
+	gap: 8px;
+	margin-bottom: 12px;
+
+	padding: 16px;
+
+	&_description {
+		max-height: 430px;
+		height: 100%;
+		color: #a0a0a0;
+	}
+	h4 {
+		margin-block: 8px;
+	}
+	&_button {
+		display: flex;
+		gap: 8px;
+	}
+}
+
+.admin {
+	&_add {
+		max-width: 514px;
+		max-height: 482px;
+		background: #f7f8fa;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		transition: 0.2s linear;
+		svg {
+			stroke: #50d177;
+			transition: 0.2s linear;
+			transform: scale(2);
+		}
+		&:hover {
+			background: #eaeaea;
+			svg {
+				stroke: #50c172;
+			}
+		}
+	}
+	&_courses {
+		display: flex;
+		gap: 8px;
+	}
+	&_setting {
+		display: grid;
+		gap: 44px;
+	}
+}

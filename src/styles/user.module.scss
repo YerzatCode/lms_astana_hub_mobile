@@ -1,0 +1,43 @@
+.user {
+	p {
+		color: #a0a0a0;
+	}
+	color: black;
+	background: #f7f8fa;
+	padding: 24px 26px;
+	&_head,
+	&_data {
+		display: flex;
+		width: 100%;
+	}
+	&_head {
+		justify-content: space-between;
+		align-items: center;
+		border-bottom: 1px solid #e6e6e6;
+		padding-bottom: 20px;
+		div {
+			display: flex;
+			align-items: center;
+		}
+	}
+	&_data {
+		gap: 16px;
+		margin-block: 20px;
+	}
+	&_info {
+		display: flex;
+		flex-direction: column;
+		gap: 16px;
+	}
+	&_progress {
+		width: 496px;
+		height: 270px;
+		background: #ffffff;
+
+		&_bar {
+			width: 174px;
+			height: 174px;
+			background: red;
+		}
+	}
+}
